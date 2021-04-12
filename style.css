@@ -33,33 +33,33 @@ body {
 }
 
 .amounts {
-    grid-column-start: 1;
-    display: grid;
+  grid-column-start: 1;
+  display: grid;
 }
 
 .amount {
-    padding: 10px;
-    height: 50px;
-    border-radius: 5px;
-    border: none;
-    margin: auto;
-    width: 80%;
-    font-size: 20px;
-    
-    
+  padding: 10px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  margin: auto;
+  width: 80%;
+  font-size: 20px;
+}
+
+.amount:read-only:hover {
+    cursor:default;
 }
 
 .titles {
-    grid-column-start: 2;
-    display: grid;
+  grid-column-start: 2;
+  display: grid;
 }
 
 .title {
-    margin: auto;
-    color: #f6f4f3;
+  margin: auto;
+  color: #f6f4f3;
 }
-
-
 
 
 .convert-btn {

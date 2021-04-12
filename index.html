@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/easy-autocomplete@1.3.5/dist/easy-autocomplete.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Currency Converter</title>
   </head>
@@ -17,18 +21,29 @@
       <div class="converter">
         <div class="currencies">
           <div class="amounts">
-            <input class="amount">
-            <input class="amount" />
+            <input class="amount" placeholder="Enter Amount" type="number" />
+            <input class="amount" readonly />
           </div>
           <div class="titles">
-            <select  id="country-drop"></select>
-            <h2 class="title">USD</h2>
+            <input id="currencies1" class="currency" />
+            <input id="currencies2" class="currency" />
           </div>
         </div>
       </div>
-      <button class="convert-btn">Convert</button>
+      <button class="convert-btn" onclick="convert()">Convert</button>
+      <div></div>
     </div>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/jquery.easy-autocomplete.min.js"
+      integrity="sha512-Z/2pIbAzFuLlc7WIt/xifag7As7GuTqoBbLsVTgut69QynAIOclmweT6o7pkxVoGGfLcmPJKn/lnxyMNKBAKgg=="
+      crossorigin="anonymous"
+    ></script>
+
     <script src="./main.js"></script>
   </body>
 </html>
