@@ -7,6 +7,7 @@
 body {
   background: #183059;
   font-family: "Poppins", sans-serif;
+
 }
 
 .container {
@@ -32,6 +33,7 @@ body {
   height: 200px;
 }
 
+
 .amounts {
   grid-column-start: 1;
   display: grid;
@@ -54,11 +56,17 @@ body {
 .titles {
   grid-column-start: 2;
   display: grid;
+  align-items: center;
 }
 
 .title {
   margin: auto;
   color: #f6f4f3;
+  padding: 10px -30px;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  font-size: 20px;
 }
 
 
