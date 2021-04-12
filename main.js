@@ -1,22 +1,23 @@
-let dropdown = document.getElementById("country-drop");
-dropdown.length = 0;
+var options = {
+  url: "./currencies.json",
 
-let defaultOption = document.createElement("option");
-defaultOption.text = "Choose Currency";
+  getValue: "code",
 
-dropdown.add(defaultOption);
-dropdown.selectedIndex = 0;
+  list: {
+    match: {
+      enabled: true,
+    },
+  },
+};
 
-fetch("./currencies.json")
-  .then((response) => {
-    return response.json();
-  })
-  .then((json) => {
-    let option;
-    for (currency in json) {
-      option = document.createElement("option");
-      option.text = currency;
-      option.value = currency;
-      dropdown.add(option);
-    }
-  });
+$("#currencies1").easyAutocomplete(options);
+$("#currencies2").easyAutocomplete(options);
+
+const convert = () => {
+  let selected = document.getElementsByClassName("selected");
+
+  let currency1 = selected[0].textContent;
+  let currency2 = selected[1].textContent;
+
+  
+};
